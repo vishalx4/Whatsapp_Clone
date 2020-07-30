@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A79DF"
+    tools:context=".Activity.Login">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_centerInParent="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#74B9FF"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_email_black_24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/emailET_Login"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorAccent"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/email"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#74B9FF"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_lock_black_24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/passwordET_Login"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorAccent"
+                        android:inputType="textPassword"
+                        android:hint="@string/email"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:onClick="LoginButton"
+            android:background="#74B9FF"
+            android:layout_gravity="center"
+            android:padding="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Need a Account?:Register"
+            android:textColor="#fff"
+            android:onClick="gotoRegisterActivity"
+            android:layout_marginTop="6dp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
